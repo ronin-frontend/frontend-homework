@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="#">Login</a>
+      |
+      <a href="#"><font color="green">Register</font></a>
+
+      <p>Enter your email and password to register.</p>
+    </header>
+
+    <section>
+      <form action="#" method="post">
+        <p>
+          <label for="username">Username</label><br />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="email">Email Address</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="password">Password</label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="confirm-password">Confirm Password</label><br />
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Confirm Password"
+            required
+          />
+        </p>
+
+        <p>
+          <button type="submit">Register</button>
+        </p>
+      </form>
+    </section>
+
+    <footer>
+      <p>Or register with</p>
+
+      <p>
+        <button type="button">
+          <img src="google.svg" alt="Google" width="18" />
+          Continue with Google
+        </button>
+      </p>
+
+      <p>
+        <button type="button">
+          <img src="facebook.svg" alt="Facebook" width="18" />
+          Continue with Facebook
+        </button>
+      </p>
+    </footer>
+  </body>
+</html>
