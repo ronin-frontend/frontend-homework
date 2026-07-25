@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Command List</title>
+  </head>
+
+  <body>
+    <h1>Git Command List</h1>
+
+    <h2>Git Configuration</h2>
+
+    <ul>
+      <li>
+        <strong>git config --global user.name "Ronin"</strong> - set Git
+        username.
+      </li>
+      <li>
+        <strong>git config --global user.email "your@email.com"</strong> - set
+        Git email.
+      </li>
+    </ul>
+
+    <h2>SSH Setup</h2>
+
+    <ul>
+      <li>
+        <strong>ssh-keygen -t ed25519 -C "your@email.com"</strong> - generate a
+        new SSH key.
+      </li>
+      <li>
+        <strong>ssh -T git@github.com</strong> - test GitHub SSH connection.
+      </li>
+    </ul>
+
+    <h2>Repository Initialization</h2>
+
+    <ul>
+      <li><strong>git init</strong> - initialize a new Git repository.</li>
+      <li><strong>git status</strong> - show repository status.</li>
+    </ul>
+
+    <h2>Creating Commits</h2>
+
+    <ul>
+      <li><strong>git add Resume</strong> - add Resume project to staging.</li>
+      <li>
+        <strong>git commit -m "Add Resume homework"</strong> - create Resume
+        commit.
+      </li>
+
+      <li>
+        <strong>git add Greenshop</strong> - add Greenshop project to staging.
+      </li>
+      <li>
+        <strong>git commit -m "Add Greenshop homework"</strong> - create
+        Greenshop commit.
+      </li>
+
+      <li><strong>git log --oneline</strong> - show commit history.</li>
+    </ul>
+
+    <h2>Working with Remote Repository</h2>
+
+    <ul>
+      <li>
+        <strong
+          >git remote add origin
+          git@github.com:ronin-frontend/frontend-homework.git</strong
+        >
+        - connect local repository to GitHub.
+      </li>
+
+      <li><strong>git remote -v</strong> - show remote repository.</li>
+
+      <li>
+        <strong>git pull origin main --allow-unrelated-histories</strong> -
+        merge local and remote repositories.
+      </li>
+
+      <li>
+        <strong>git push -u origin main</strong> - upload commits to GitHub.
+      </li>
+    </ul>
+
+    <h2>Working with Branches</h2>
+
+    <ul>
+      <li>
+        <strong>git switch -c homework-4</strong> - create and switch to the
+        homework branch.
+      </li>
+
+      <li><strong>git branch</strong> - show all branches.</li>
+
+      <li>
+        <strong>git push -u origin homework-4</strong> - upload the homework
+        branch to GitHub.
+      </li>
+    </ul>
+  </body>
+</html>
