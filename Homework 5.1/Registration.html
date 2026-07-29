@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">
+          <a class="link" href="Login.html">Login</a>
+          |
+          <a class="active" href="Registration.html">Register</a>
+        </h1>
+
+        <p class="description">Enter your email and password to register.</p>
+      </header>
+
+      <section>
+        <form action="#" method="post">
+          <p>
+            <input
+              class="input"
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />
+          </p>
+
+          <p>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </p>
+
+          <p>
+            <input
+              class="input"
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </p>
+
+          <p>
+            <input
+              class="input"
+              type="password"
+              name="confirm-password"
+              placeholder="Confirm Password"
+              required
+            />
+          </p>
+
+          <p>
+            <button class="button" type="submit">Register</button>
+          </p>
+        </form>
+      </section>
+
+      <footer>
+        <p class="or">Or register with</p>
+
+        <p>
+          <button class="social" type="button">
+            <img src="images/google.svg" alt="Google" width="18" />
+            Continue with Google
+          </button>
+        </p>
+
+        <p>
+          <button class="social" type="button">
+            <img src="images/facebook.svg" alt="Facebook" width="18" />
+            Continue with Facebook
+          </button>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
