@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  margin: 30px auto;
+}
+
+.header {
+  height: 53px;
+  border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 229px;
+}
+
+.login-button {
+  display: inline-block;
+  vertical-align: middle;
+}
+.logo img {
+  width: 150px;
+  height: 34px;
+}
+
+.menu {
+  display: inline-block;
+  margin-left: 229px;
+  vertical-align: middle;
+}
+.menu a {
+  display: inline-block;
+  margin-right: 50px;
+
+  text-decoration: none;
+  color: #3d3d3d;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.menu .active {
+  font-weight: 700;
+  border-bottom: 3px solid #46a358;
+  padding-bottom: 14px;
+}
+
+.login-button {
+  display: inline-block;
+
+  width: 100px;
+  height: 35px;
+
+  background: #46a358;
+  border-radius: 6px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  text-align: center;
+  line-height: 35px;
+
+  vertical-align: middle;
+  margin-left: 300px;
+}
+
+.login-button img {
+  width: 20px;
+  height: 20px;
+
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.hero {
+  background: #f5f5f5;
+
+  width: 1200px;
+  height: 450px;
+}
+
+.hero-content {
+  display: inline-block;
+  width: 580px;
+  margin-top: 68px;
+  margin-left: 43px;
+  vertical-align: top;
+}
+
+.hero-image {
+  display: inline-block;
+  width: 507px;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.hero-image img {
+  width: 507px;
+  height: 450px;
+}
+
+.welcome {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3d3d3d;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  position: relative;
+  top: 34px;
+}
+
+.hero-title {
+  width: 620px;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 68px;
+  color: #3d3d3d;
+  margin-bottom: 12px;
+}
+.hero-title span {
+  color: #46a358;
+}
+
+.description {
+  width: 557px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #727272;
+  margin-bottom: 25px;
+}
+
+.shop-button {
+  width: 140px;
+  height: 40px;
+
+  background-color: #46a358;
+
+  border-radius: 6px;
+
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 5px;
+}
