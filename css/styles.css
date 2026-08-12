@@ -1,39 +1,179 @@
-@font-face {
-  font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Regular.woff") format("woff");
+/* ===== HW 6.1 — Header + Hero ===== */
+.site-page {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.site-container {
+  width: 1200px;
+  margin: 30px auto;
+}
+
+.site-container .header {
+  height: 53px;
+  border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+.site-container .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.site-container .menu {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 229px;
+}
+
+.site-container .login-button {
+  display: inline-block;
+  vertical-align: middle;
+}
+.site-container .logo img {
+  width: 150px;
+  height: 34px;
+}
+
+.site-container .menu {
+  display: inline-block;
+  margin-left: 229px;
+  vertical-align: middle;
+}
+.site-container .menu a {
+  display: inline-block;
+  margin-right: 50px;
+
+  text-decoration: none;
+  color: #3d3d3d;
+
+  font-size: 16px;
   font-weight: 400;
+  line-height: 20px;
 }
 
-@font-face {
-  font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Medium.woff") format("woff");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Bold.woff") format("woff");
+.site-container .menu .active {
   font-weight: 700;
+  border-bottom: 3px solid #46a358;
+  padding-bottom: 14px;
+}
+
+.site-container .login-button {
+  display: inline-block;
+
+  width: 100px;
+  height: 35px;
+
+  background: #46a358;
+  border-radius: 6px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  text-align: center;
+  line-height: 35px;
+
+  vertical-align: middle;
+  margin-left: 300px;
+}
+
+.site-container .login-button img {
+  width: 20px;
+  height: 20px;
+
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.site-container .hero {
+  background: #f5f5f5;
+
+  width: 1200px;
+  height: 450px;
+}
+
+.site-container .hero-content {
+  display: inline-block;
+  width: 580px;
+  margin-top: 68px;
+  margin-left: 43px;
+  vertical-align: top;
+}
+
+.site-container .hero-image {
+  display: inline-block;
+  width: 507px;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.site-container .hero-image img {
+  width: 507px;
+  height: 450px;
+}
+
+.site-container .welcome {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3d3d3d;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  position: relative;
+  top: 34px;
+}
+
+.site-container .hero-title {
+  width: 620px;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 68px;
+  color: #3d3d3d;
+  margin-bottom: 12px;
+}
+.site-container .hero-title span {
+  color: #46a358;
+}
+
+.site-container .description {
+  width: 557px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #727272;
+  margin-bottom: 25px;
+}
+
+.site-container .shop-button {
+  width: 140px;
+  height: 40px;
+
+  background-color: #46a358;
+
+  border-radius: 6px;
+
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+
+/* ===== HW 7.1 — Catalog / Flexbox ===== */
+.catalog-container {
+  font-family: "Cera Pro", sans-serif;
 }
 * {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: "Cera Pro", sans-serif;
-  color: #3d3d3d;
-}
-
-.container {
+.catalog-container {
   width: 1200px;
   margin: 0 auto;
   padding-top: 171px;
+  display: flex;
 }
-/* SIDEBAR */
 
 .sidebar {
-  float: left;
   width: 310px;
   background-color: #ffffff;
 }
@@ -48,55 +188,40 @@ body {
   list-style: none;
 }
 
-/* PRODUCTS */
-
 .products {
-  float: left;
   width: 840px;
   margin-left: 50px;
 }
 
-/* верхняя панель */
-
 .products-top {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* фильтры */
-
 .filters {
-  float: left;
 }
 
 .filters a {
   display: inline-block;
 }
 
-/* сортировка */
-
 .sorting {
-  float: right;
 }
-
-/* очищаем float */
-
-.products-top::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/* карточки */
 
 .products-list {
   margin-top: 31px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
 }
-
-/* пагинация */
 
 .pagination {
   margin-top: 90px;
   text-align: right;
+  width: 100%;
 }
 
 .pagination a {
@@ -130,15 +255,11 @@ body {
   border-color: #46a358;
 }
 .product-card {
-  float: left;
   width: 258px;
   height: 350px;
-  margin-right: 33px;
   margin-bottom: 70px;
 }
-.product-card:nth-child(3n + 1) {
-  margin-right: 0;
-}
+
 .product-card img {
   display: block;
   width: 250px;
@@ -162,18 +283,10 @@ body {
   color: #46a358;
 }
 
-.products-list::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .filters {
-  float: left;
 }
 
 .sorting {
-  float: right;
 }
 .filters a {
   display: inline-block;
@@ -206,7 +319,6 @@ body {
 }
 
 .sidebar {
-  float: left;
   width: 310px;
   height: 774px;
   padding: 15px 20px;
@@ -265,4 +377,149 @@ body {
   vertical-align: middle;
   position: relative;
   top: -8px;
+}
+
+
+/* ===== HW 8.1 — Promo + Blog ===== */
+
+.content-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.promo {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.promo-card {
+  width: 586px;
+  height: 302px;
+  display: flex;
+  align-items: center;
+  background-color: #fbfbfb;
+}
+
+.promo-card img {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.promo-content {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.promo-content h2 {
+  font-family: "Cera Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0 0 10px;
+}
+
+.promo-content p {
+  font-family: "Cera Pro", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+
+.promo-content a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #46a358;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Cera Pro", sans-serif;
+}
+
+.blog {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.blog h2 {
+  margin: 0 0 15px;
+  font-family: "Cera Pro", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #3d3d3d;
+  text-align: center;
+}
+
+.blog-subtitle {
+  margin: 0 0 35px;
+  font-family: "Cera Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #727272;
+  text-align: center;
+}
+
+.blog-list {
+  display: flex;
+  gap: 30px;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.blog-card {
+  width: 270px;
+  background-color: #fbfbfb;
+}
+
+.blog-card img {
+  display: block;
+  width: 270px;
+  height: 195px;
+  object-fit: cover;
+}
+
+.blog-info {
+  padding: 10px;
+}
+
+.blog-info span {
+  font-family: "Cera Pro", sans-serif;
+  font-size: 12px;
+  color: #46a358;
+}
+
+.blog-info h3 {
+  font-family: "Cera Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 8px 0;
+  color: #3d3d3d;
+}
+
+.blog-info p {
+  font-family: "Cera Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  color: #727272;
+}
+
+.blog-info a {
+  font-family: "Cera Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.read-more.active {
+  color: #46a358;
 }
