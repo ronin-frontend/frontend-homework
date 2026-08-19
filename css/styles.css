@@ -14,6 +14,7 @@
   border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
   margin-top: 30px;
   margin-bottom: 12px;
+  position: relative;
 }
 .site-container .logo {
   display: inline-block;
@@ -27,8 +28,22 @@
 }
 
 .site-container .login-button {
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 100px;
+  height: 35px;
+
+  background: #46a358;
+  border-radius: 6px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  text-align: center;
+  line-height: 35px;
 }
 .site-container .logo img {
   width: 150px;
@@ -601,4 +616,122 @@
 .product-actions a:hover img {
   filter: brightness(0) saturate(100%) invert(55%) sepia(30%) saturate(1100%)
     hue-rotate(90deg) brightness(90%) contrast(90%);
+}
+
+.plant-care-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.plant-care-dropdown > a {
+  display: inline-block;
+}
+
+.plant-care-dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 165px;
+
+  background-color: #eef7ef;
+
+  z-index: 100;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.plant-care-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.plant-care-dropdown .dropdown-menu > a,
+.plant-care-dropdown .submenu-trigger > a {
+  display: block;
+
+  width: 165px;
+  height: 33px;
+
+  margin: 0;
+  padding: 0 14px;
+
+  box-sizing: border-box;
+
+  color: #3d3d3d;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.plant-care-dropdown .dropdown-menu > a:hover,
+.plant-care-dropdown .submenu-trigger:hover > a {
+  background-color: #1f7a34;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.plant-care-dropdown .submenu-trigger {
+  position: relative;
+}
+
+.plant-care-dropdown .submenu-trigger > a span {
+  position: absolute;
+  right: 14px;
+}
+
+.plant-care-dropdown .submenu {
+  position: absolute;
+  top: 0;
+  left: 165px;
+
+  width: 165px;
+
+  background-color: #eef7ef;
+
+  z-index: 101;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.plant-care-dropdown .submenu-trigger:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.plant-care-dropdown .submenu a {
+  display: block;
+
+  width: 165px;
+  height: 33px;
+
+  margin: 0;
+  padding: 0 14px;
+
+  box-sizing: border-box;
+
+  color: #3d3d3d;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.plant-care-dropdown .submenu a:hover {
+  background-color: #1f7a34;
+  color: #ffffff;
+  font-weight: 700;
+}
+.plant-care-dropdown {
+  vertical-align: middle;
+}
+.plant-care-dropdown > a {
+  position: relative;
+  top: 7px;
 }
