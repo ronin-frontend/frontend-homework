@@ -133,9 +133,8 @@
   font-weight: 500;
   color: #3d3d3d;
   letter-spacing: 1px;
-  margin-bottom: 30px;
-  position: relative;
-  top: 34px;
+  margin-bottom: 27px;
+  transform: translateY(20px);
 }
 
 .site-container .hero-title {
@@ -1026,4 +1025,11 @@
   width: 224px;
   height: 26px;
   object-fit: contain;
+}
+.footer-contact .contact-item a {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+.contact-item {
+  gap: 10px;
 }
