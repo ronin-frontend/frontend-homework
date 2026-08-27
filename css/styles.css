@@ -225,10 +225,10 @@
 
 .products-list {
   margin-top: 31px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 258px);
   justify-content: space-between;
-  flex-direction: row;
+  row-gap: 70px;
 }
 
 .pagination {
@@ -270,7 +270,7 @@
 .product-card {
   width: 258px;
   height: 350px;
-  margin-bottom: 70px;
+
   position: relative;
 }
 .product-card::before {
